@@ -1,0 +1,28 @@
+.profile-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info p {
+    margin: 10px 0;
+}
+
+.profile-info strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.error {
+    color: red;
+    margin: 10px 0;
+}
