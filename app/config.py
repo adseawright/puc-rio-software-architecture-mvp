@@ -1,9 +1,7 @@
 import os
 
 class Config:
-    # Database configuration
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///jr_market.db'
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
-    
-    # Secret key for session management
-    SECRET_KEY = os.getenv('SECRET_KEY', '4c3b1626e1f1b4e5e3c7b1f59d9b8c1e7a2f3b4e5c1d7e6a4d2f7c8b5e6a4d3c')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI', 'sqlite:///jr_market.db')
+    PAYPAL_CLIENT_ID = os.environ.get('PAYPAL_CLIENT_ID')
+    PAYPAL_CLIENT_SECRET = os.environ.get('PAYPAL_CLIENT_SECRET')
